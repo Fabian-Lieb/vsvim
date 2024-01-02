@@ -65,7 +65,7 @@
         },
         {
             "before": ["<leader>", "t"],
-            "commands": ["workbench.action.toggleSidebarVisibility"],
+            "commands": ["workbench.action.terminal.openNativeConsole"],
             "silent": true
         },
         {
@@ -144,13 +144,23 @@
             "commands": ["editor.action.clipboardPasteAction"],
             "silent": true
         },
+        {
+            "before": ["<leader>", "ö"],
+            "commands": ["workbench.action.terminal.toggleTerminal"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "#"],
+            "commands": ["editor.action.commentLine"],
+            "silent": true
+        },
     ],
     "window.menuBarVisibility": "classic",
     "vim.statusBarColorControl": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f0000",
-        "statusBar.noFolderBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#5f0000",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
@@ -203,7 +213,7 @@
         },
         {
             "before": ["<leader>", "r", "a"],
-            "commands": ["workbench.view.search"],
+            "commands": ["workbench.view.search"] ,
             "silent": true
         },
         {
@@ -214,6 +224,16 @@
         {
             "before": ["<leader>", "p"],
             "commands": ["editor.action.clipboardPasteAction", "cancelSelection", "extension.vim_escape"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "ö"],
+            "commands": ["workbench.action.terminal.toggleTerminal"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "#"],
+            "commands": ["editor.action.commentLine"],
             "silent": true
         },
         {
